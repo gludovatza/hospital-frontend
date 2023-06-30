@@ -1,0 +1,108 @@
+.container {
+    position: relative;
+}
+
+.mobile {
+    display: none;
+    position: absolute;
+    top: 80;
+    height: 200px;
+    z-index: 0;
+}
+
+.mobile img {
+    object-fit: cover;
+    width: 100vw;
+    height: 100%;
+}
+
+.home {
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    background: url('/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
+
+.container .triangle {
+    position: absolute;
+    padding: 0;
+    margin-bottom: 3rem;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.container .triangle:hover {
+    background-color: #0d0;
+}
+
+.container .triangle:hover .icon{
+    color: #fff;
+}
+
+.container .triangle .icon {
+    height: 70px;
+    color: #333;
+    transition: 0.3s all;
+}
+
+.home video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.home .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15%;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.2);
+}
+
+.home .content h1, h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.home .content h1 {
+    font-size: 7rem;
+    color: var(--primary-color);
+}
+
+.home .content h2 {
+    margin-top: 0.5rem;
+    padding: 0.2rem;
+    font-size: 4rem;
+}
+
+@media screen and (max-width:900px) {
+    .home {
+        height: 100vh;
+    }
+    .home .content {
+        padding: 1rem 7%;
+    }
+    .home .content h1 {
+        font-size: 3.2rem;
+    }
+
+    .home .content h2 {
+        font-size: 2rem;
+    }
+}

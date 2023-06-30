@@ -1,0 +1,27 @@
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #eee;
+    padding: 3rem 1rem;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2, p, .line {
+    margin-bottom: 1.2rem;
+}
+
+
+
+

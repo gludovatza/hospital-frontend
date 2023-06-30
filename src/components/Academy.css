@@ -1,0 +1,66 @@
+.academy {
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.academy video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.academy .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 15%;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+}
+
+.academy .content h1 {
+    font-size: 7rem;
+}
+
+.academy .content h2 {
+    margin-top: 0.5rem;
+    font-size: 4rem;
+}
+
+.academy .content .button {
+    margin-top: 1rem;
+}
+
+.academy .content span {
+    color: rgb(0, 79, 179);
+}
+
+@media screen and (max-width:900px) {
+    .academy .content {
+        padding: 1rem 7%;
+    }
+    .academy .content h1 {
+        font-size: 3rem;
+    }
+
+    .academy .content h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+

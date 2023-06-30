@@ -1,0 +1,120 @@
+.services {
+    width: 100%;
+}
+
+.services .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.services h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 7rem;
+}
+
+.services h2 {
+    display: flex;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.5);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 1rem;
+    height: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.services p {
+    display: flex;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.7);
+    line-height: 1.3;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10%;
+    height: 35%;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .container .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 1.5rem 0 0 0;
+    max-width: 1200px;
+}
+
+.services .container a {
+    padding: 0.5rem 2rem;
+    margin: 1.5rem auto 0;
+}
+
+.services .card {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transition: 0.3s all;
+  }
+
+  .services .card:hover {
+    width: 120%;
+  }
+
+  .services .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .services .card .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    height: 300px;
+    width: 100%;
+    transition: 0.3s all;
+  }
+
+@media screen and (max-width: 900px) {
+    .services .container {
+        width: 100%;
+        padding: 1rem;
+        padding-bottom: 5rem;
+    }
+
+    .services .container .content {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+
+    .services .card {
+        max-width: 100%;
+    }
+
+    .services p {
+        height: 25%;
+    }
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #00dd00;
+    --primary-dark: #00bb00;
+    --primary-darker: #00aa00;
+    --secondary-color: #ff0000;
+    --secondary-dark: #e30202;
+    --overlay: rgba(0, 0, 0, .7);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.2rem;
+    line-height: 1.2;
+
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button,
+.button:focus {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    background: var(--primary-color);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+    border-top: 3px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    transition: all 0.3s;
+    outline: none;
+}
+
+.button:hover {
+    background: var(--primary-dark);
+}
+
+.button:active {
+    background: var(--primary-darker);
+    border-top: 4px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    transition: none;
+}
+
+.line {
+    display: block;
+    width: 80px;
+    height: 5px;
+    margin: 0.8rem auto;
+    background-color: var(--primary-color);
+}
+
+a {
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}

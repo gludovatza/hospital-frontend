@@ -1,0 +1,46 @@
+.deleteconfirm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteconfirm_content {
+    background-color: #fff;
+    width: 40rem;
+    height: 25%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.deleteconfirm_title {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.deleteconfirm_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .deleteconfirm_content {
+        width: 90%;
+    }
+
+    .deleteconfirm_title {
+        font-size: 1.2rem;
+    }
+}
